@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+body{
+    background-color: rgb(130, 200, 220);
+    font-family: Roboto,'sans-serif';
+    font-weight: 500;
+    
+}
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    
+
+}
+.quotes{
+    border-radius: 20px;
+    box-shadow: 3px 5px 7px  rgba(94, 135, 230, 0.984);
+    background-color: rgba(255, 255, 255, 0.927);
+    width: 400px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    text-align: center;
+    
+}
+button{
+    margin-top: 20px;
+    background-color:rgba(38, 94, 225, 0.984);
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 18px;
+    border:none;
+    cursor:pointer;
+}
+.container h2{
+    color: rgb(134, 10, 229);
+    font-size : 40px;
+    
+}
+button:active{
+    background-color:rgb(36, 2, 120);
+}
+.quotes p {
+    font-size: 22px;
+    color: rgb(40, 35, 35);
+
+}
+.quotes h3{
+    margin-top: 40px;
+    font-size: 20px;
+
+}
+@media only screen and (max-width: 480px) {
+  .quotes p .quotes h3{
+    font-size: 18px;
+ }
+ }

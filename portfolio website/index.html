@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    <header class="header-bar">
+        <h3 class="logo">Portfolio.</h3>
+        <i class='bx bx-menu' id="hmb-menu"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am </h3>
+            <h1>Divya Kanapuriya</h1>
+            <h3>And I am a <br><span id="element"></span></h3>
+            <a href="#contact">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/bg.png">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-img">
+                    <img src="images/aboutme.png">
+                </div>
+                <div class="about-content">
+                    <h1>About Me</h1>
+                    <p>Hello, I am a trained Front-end developer. I have completed hands on training with projects and
+                        learnt
+                        all the concepts from basic to advance level related to Web Development, looking for new
+                        opportunities
+                        to build more and work well.</p>
+                    <div class="abt-container">
+                        <div class="headings">
+                            <div class="about-links active" onclick="openContent('skills')">Skills</div>
+                            <div class="about-links" onclick="openContent('education')">Education</div>
+                            <div class="about-links" onclick="openContent('training')">Training</div>
+                        </div>
+                        <div class="contents active-content" id="skills">
+                            <ul>
+                                <li><span>UI development</span><br>HTML5, CSS, JavaScript</li>
+                                <li><span>Front-end development</span><br>ReactJs</li>
+                                <li><span>Back-end development</span><br>MongoDb, Express, nodejs</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="education">
+                            <ul>
+                                <li><span>2022-2023</span><br>Full Stack Web Development</li>
+                                <li><span>2020-2022</span><br>M.Tec- EC VLSI design</li>
+                                <li><span>2015-2019</span><br>Bachelor of Engineering</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="training">
+                            <ul>
+                                <li><span>Full stack Web development</span><br>Naresh I Technologies </li>
+                                <li><span>React 18 with TypeScript</span><br>Naresh I Technologies </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <h4 class="title">Skills</h4>
+        <div class="skills-container">
+            <div class="bars">
+                <div class="info">
+                    <span class="skill-title">HTML5</span>
+                    <span class="value">80%</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress html-bg"></div>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span class="skill-title">CSS</span>
+                    <span class="value">65%</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress css-bg"></div>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span class="skill-title">JavaScript</span>
+                    <span class="value">67%</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress Javascript-bg"></div>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span class="skill-title">Bootstrap 5</span>
+                    <span class="value">85%</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress Bootstrap-bg"></div>
+                </div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span class="skill-title">ReactJs</span>
+                    <span class="value">40%</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress ReactJs-bg"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="projects" class="project">
+        <h2 class="title">My Projects</h2>
+        <div class="project-content">
+            <div class="project-item">
+                <img src="images/3.jpg">
+                <div class="hover-project">
+                    <h3>Random Quote Generator</h3>
+                    <p>Source Code</p>
+                    <div class="icons">
+                        <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/1.jpg">
+                <div class="hover-project">
+                    <h3>EMI Calculator</h3>
+                    <p>Source Code</p>
+                    <div class="icons">
+                        <a href="https://github.com/DivyaKanapuriya/MyProjects/tree/master" class="icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/2.jpg">
+                <div class="hover-project">
+                    <h3>Music Player</h3>
+                    <p>Source Code</p>
+                    <div class="icons">
+                        <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/4.jpg">
+                <div class="hover-project">
+                    <h3>Responsive Website</h3>
+                    <p>Source Code</p>
+                    <div class="icons">
+                        <a href="#" class="icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/6.jpg">
+                <div class="hover-project">
+                    <h3>Netflix UI-design</h3>
+                    <p>Source Code</p>
+                    <div class="icons">
+                        <a href="https://github.com/DivyaKanapuriya/MyProjects/tree/master" class="icon"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="title">Contact Me</h2>
+        <form name="submit-to-google-sheet">
+            <div class="form-input">
+                <input type="text" name="Name" placeholder="Name">
+                <input type="text" name="Email" placeholder="Email address">
+                <input type="number" name="Mobile no." placeholder="Mobile no.">
+            </div>
+            <textarea rows="6" cols="25" placeholder="Type message here" name="Textmessage"></textarea>
+            <input type="submit" value="Send Message" class="submit">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-icon">
+            <a href="#home"><i class='bx bxs-up-arrow'></i></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzihsz3gIlTQfOOrq5v9EXFCQ0NdqD7Qat8VIhFzhN2HLb0uSrlTYEXcSbiYDNuT_vS/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <script>
+         var typed = new Typed('#element', {
+             strings: ['UI developer','Front-end developer', 'Web developer'],
+             typeSpeed: 50,
+         });
+     </script>
+</body>
+
+</html>

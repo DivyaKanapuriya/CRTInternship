@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins",'sans-serif';
+}
+*::before, *::after{
+    margin:0;
+    padding:0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    background-color: rgb(255, 225, 236);
+}
+.container{
+    width: 350px;
+    background-color:white;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+.container i{
+    cursor:pointer;
+}
+.top-row,.progress-area {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.top-row i{
+    font-size: 20px;
+    color:  rgb(252, 67, 153);
+ }
+.top-row span {
+     font-size: 18px;
+     color: rgb(81, 92, 101);
+}
+.img-area{
+    margin-top: 18px;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.img-area img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.song-details{
+    text-align:center;
+    margin : 15px 0;
+    color: rgb(86, 96, 114);
+}
+.song-details .name{
+    font-size: 21px;
+}
+.song-details .artist{
+  opacity:0.8;
+  font-size:15px;
+}
+#progressbar{ 
+     -webkit-appearance: none;
+     height: 6px;
+     width: 100%;
+     background : rgb(223, 99, 176);
+     border-radius: 4px;
+     cursor: pointer;
+}
+#progressbar::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    background: rgb(245, 236, 243);
+    width: 16px;
+    height: 16px;
+    border: 4px solid rgba(242, 105, 201, 0.952);
+    border-radius: 50%;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    align-items:center;
+    font-size: 22px;
+    color: rgb(252, 67, 154);
+    
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background:white;
+    color:  rgb(224, 140, 182);
+    border-radius:50% ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.controls div:nth-child(2){
+    transform: scale(1);
+    background: rgb(252, 67, 153);
+    color :white;
+} 
+
+
+
+
+
+
+
